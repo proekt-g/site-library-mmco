@@ -1,0 +1,16 @@
+$default-font: "Muller";
+$content-width: 1128px;
+$heightHeader: 80px;
+$heightFooter: 392px;
+$minHeightMain: calc(100vh - (#{$heightHeader} + #{$heightFooter}));
+$mainColor: #111111;
+$mainWeight: 500;
+$mainSize: 13px;
+:root {
+    --site-color: #046552;
+    --submain-color: #6e6d7a;
+    --bg-color: #eff7f6;
+    --red-color: #ee7f89;
+    --ui-color: #45917d;
+    --input-color: #f3f3f4;
+}
