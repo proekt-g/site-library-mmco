@@ -11,7 +11,7 @@ let gulp = require("gulp"),
     babel = require("gulp-babel"),
     sourcemaps = require("gulp-sourcemaps"),
     imagemin = require("gulp-imagemin"),
-    concat = require("gulp-concat");
+    concat = require("gulp-concat")
 // /vars
 
 // live mode
@@ -29,14 +29,17 @@ gulp.task("scss", function () {
         .pipe(sass({ outputStyle: "compressed" }))
         .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest("src/assets/css"))
-        .pipe(browserSync.reload({ stream: true }));
-});
-// gulp.task("js-libs", function () {
-//     return gulp
-//         .src(["node_modules/swiper/swiper-bundle.min.js"])
-//         .pipe(concat("_libs.js"))
-//         .pipe(gulp.dest("src/assets/js"));
-// });
+        .pipe(browserSync.reload({ stream: true }))
+})
+gulp.task("js-libs", function () {
+    return gulp
+        .src([
+            "node_modules/overlayscrollbars/js/OverlayScrollbars.min.js",
+            "node_modules/swiper/swiper-bundle.min.js",
+        ])
+        .pipe(concat("_libs.js"))
+        .pipe(gulp.dest("src/assets/js"))
+})
 gulp.task("js-optimization", function () {
     return gulp
         .src("src/assets/js/main.js")
@@ -49,27 +52,27 @@ gulp.task("js-optimization", function () {
         .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(rename({ prefix: "_" }))
-        .pipe(gulp.dest("src/assets/js"));
-});
+        .pipe(gulp.dest("src/assets/js"))
+})
 gulp.task("js", function () {
     return gulp
         .src(["src/assets/js/_libs.js", "src/assets/js/_main.js"])
         .pipe(concat("main.min.js"))
         .pipe(gulp.dest("src/assets/js"))
-        .pipe(browserSync.reload({ stream: true }));
-});
+        .pipe(browserSync.reload({ stream: true }))
+})
 gulp.task("html", function () {
-    return gulp.src("src/**/*.html").pipe(browserSync.reload({ stream: true }));
-});
+    return gulp.src("src/**/*.html").pipe(browserSync.reload({ stream: true }))
+})
 // /live mode
 
 // production
 gulp.task("clear", async function () {
-    del.sync("dist");
-});
+    del.sync("dist")
+})
 gulp.task("export", async function () {
-    gulp.src(["src/**/*.html", "!src/**/_*.html"]).pipe(gulp.dest("dist"));
-    gulp.src("src/assets/css/**/*.css").pipe(gulp.dest("dist/assets/css"));
+    gulp.src(["src/**/*.html", "!src/**/_*.html"]).pipe(gulp.dest("dist"))
+    gulp.src("src/assets/css/**/*.css").pipe(gulp.dest("dist/assets/css"))
     gulp.src("src/assets/js/main.min.js")
         .pipe(
             babel({
@@ -77,13 +80,13 @@ gulp.task("export", async function () {
             })
         )
         .pipe(uglify())
-        .pipe(gulp.dest("dist/assets/js"));
+        .pipe(gulp.dest("dist/assets/js"))
     gulp.src(["src/assets/images/**/*.*", "!src/assets/images/origin/**/*.*"])
         .pipe(imagemin([imagemin.svgo()]))
-        .pipe(gulp.dest("dist/assets/images"));
-    gulp.src("src/assets/fonts/**/*.*").pipe(gulp.dest("dist/assets/fonts"));
-});
-gulp.task("build", gulp.series("clear", "export"));
+        .pipe(gulp.dest("dist/assets/images"))
+    gulp.src("src/assets/fonts/**/*.*").pipe(gulp.dest("dist/assets/fonts"))
+})
+gulp.task("build", gulp.series("clear", "export"))
 // /production
 
 // browser-server
@@ -92,17 +95,17 @@ gulp.task("browser-sync", function () {
         server: {
             baseDir: "src/",
         },
-    });
-});
+    })
+})
 // /browser-server
 
 // watch
 gulp.task("watch", function () {
-    gulp.watch("src/assets/scss/**/*.scss", gulp.parallel("scss"));
-    gulp.watch("src/assets/js/main.js", gulp.parallel("js-optimization"));
-    gulp.watch("src/assets/js/_main.js", gulp.parallel("js"));
-    gulp.watch("src/**/*.html", gulp.parallel("html"));
-});
+    gulp.watch("src/assets/scss/**/*.scss", gulp.parallel("scss"))
+    gulp.watch("src/assets/js/main.js", gulp.parallel("js-optimization"))
+    gulp.watch("src/assets/js/_main.js", gulp.parallel("js"))
+    gulp.watch("src/**/*.html", gulp.parallel("html"))
+})
 // /watch
 
 gulp.task(
@@ -111,9 +114,9 @@ gulp.task(
         "browser-sync",
         "html",
         "scss",
-        // "js-libs",
+        "js-libs",
         "js-optimization",
         "js",
         "watch"
     )
-);
+)
