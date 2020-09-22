@@ -44,40 +44,40 @@
           <div class="filter__title title">Календарь событий</div>
           <form class="filter__form" method="post">
             <div class="filter__top">
-              <input class="filter__input" type="checkbox" id="filter-top-1" name="filter-top-1" />
+              <input class="filter-input" type="checkbox" id="filter-top-1" name="filter-top-1" />
               <label class="filter__top-tag filter__top-tag--like" for="filter-top-1">Понравившиеся</label>
-              <input class="filter__input filter__input--all" type="checkbox" id="filter-top-2" name="filter-top-2" checked />
+              <input class="filter-input filter__input--all" type="checkbox" id="filter-top-2" name="filter-top-2" checked />
               <label class="filter__top-tag filter__top-tag--check filter__top-tag--all" for="filter-top-2">Все</label>
-              <input class="filter__input" type="checkbox" id="filter-top-3" name="filter-top-3" />
+              <input class="filter-input" type="checkbox" id="filter-top-3" name="filter-top-3" />
               <label class="filter__top-tag" for="filter-top-3">Мероприятие</label>
-              <input class="filter__input" type="checkbox" id="filter-top-4" name="filter-top-4" />
+              <input class="filter-input" type="checkbox" id="filter-top-4" name="filter-top-4" />
               <label class="filter__top-tag" for="filter-top-4">Видео</label>
-              <input class="filter__input" type="checkbox" id="filter-top-5" name="filter-top-5" />
+              <input class="filter-input" type="checkbox" id="filter-top-5" name="filter-top-5" />
               <label class="filter__top-tag" for="filter-top-5">Партнёрские</label>
-              <input class="filter__input" type="checkbox" id="filter-top-6" name="filter-top-6" />
+              <input class="filter-input" type="checkbox" id="filter-top-6" name="filter-top-6" />
               <label class="filter__top-tag" for="filter-top-6">Анонс</label>
-              <input class="filter__input" type="checkbox" id="filter-top-7" name="filter-top-7" />
+              <input class="filter-input" type="checkbox" id="filter-top-7" name="filter-top-7" />
               <label class="filter__top-tag" for="filter-top-7">Офлайн</label>
-              <input class="filter__input" type="checkbox" id="filter-top-8" name="filter-top-8" />
+              <input class="filter-input" type="checkbox" id="filter-top-8" name="filter-top-8" />
               <label class="filter__top-tag" for="filter-top-8">Без регистрации</label>
               <div class="filter__top-switch-wrapper">
                 <div class="filter__top-switch">
                   <div class="filter__top-switch-text">Все события</div>
                   <div class="filter__modal">
-                    <input class="filter__input" type="radio" id="filter-top-9" name="filter-top-9" />
+                    <input class="filter-input" type="radio" id="filter-top-9" name="filter-top-9" />
                     <label class="filter__modal-label" for="filter-top-9">Предстоящие</label>
-                    <input class="filter__input" type="radio" id="filter-top-10" name="filter-top-9" />
+                    <input class="filter-input" type="radio" id="filter-top-10" name="filter-top-9" />
                     <label class="filter__modal-label" for="filter-top-10">Прошедшие</label>
-                    <input class="filter__input" type="radio" id="filter-top-11" name="filter-top-9" checked />
+                    <input class="filter-input" type="radio" id="filter-top-11" name="filter-top-9" checked />
                     <label class="filter__modal-label filter__modal-label--hidden" for="filter-top-11">Все события</label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="filter__bottom">
-              <div class="filter__search">
-                <input class="filter__search-input" type="text" placeholder="Введите название события" />
-                <button class="filter__search-loupe" type="submit">
+              <div class="filter__search filter-search">
+                <input class="filter__search-input filter-search__input" type="text" placeholder="Введите название события" />
+                <button class="filter__search-loupe filter-search__loupe" type="submit">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                     <path
                       fill="#6e6d7a"
@@ -87,11 +87,11 @@
                 </button>
               </div>
               <div class="filter__bottom-switch">
-                <input class="filter__input filter__input--left" type="radio" id="filter-bottom-1" name="filter-bottom-1" />
-                <label class="filter__bottom-label filter__bottom-label--left" for="filter-bottom-1">По новизне</label>
-                <div class="filter__bottom-toggle filter__bottom-toggle--right"></div>
-                <input class="filter__input filter__input--right" type="radio" id="filter-bottom-2" name="filter-bottom-1" checked />
-                <label class="filter__bottom-label filter__bottom-label--right" for="filter-bottom-2">По популярности</label>
+                <input class="filter-input toggle__input toggle__input--left" type="radio" id="filter-bottom-1" name="filter-bottom-1" />
+                <label class="toggle__label toggle__label--left" for="filter-bottom-1">По новизне</label>
+                <div class="toggle__switch toggle__switch--right"></div>
+                <input class="filter-input toggle__input toggle__input--right" type="radio" id="filter-bottom-2" name="filter-bottom-1" checked />
+                <label class="toggle__label toggle__label--right" for="filter-bottom-2">По популярности</label>
               </div>
             </div>
           </form>

@@ -193,6 +193,8 @@
         &__text {
             margin: 10px 0 20px;
             display: flex;
+            max-width: 240px;
+            overflow: hidden;
         }
         &__download {
             color: #036452;
@@ -386,6 +388,27 @@
         }
         &__picture {
             height: auto;
+        }
+    }
+    .mobail {
+        margin-top: 56px;
+        margin-left: 10px;
+        display: none;
+        @media (max-width: 1200px) {
+            display: block;
+        }
+        @media (max-width: 950px) {
+            margin-left: 32px;
+        }
+        @media (max-width: 500px) {
+            margin-left: 20px;
+        }
+        &__title {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+        .swiper-slide {
+            width: auto;
         }
     }
 }
