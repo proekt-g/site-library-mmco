@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo" href="#">
+          <picture class="header__picture">
+            <source media="(max-width: 950px)" srcset="assets/images/logo-mobail.svg" />
+            <img class="header__logo-img" src="assets/images/logo.svg" alt="" />
+          </picture>
+        </a>
+        <picture class="header__icon">
+          <source media="(max-width: 950px)" srcset="assets/images/icon-mobail.svg" />
+          <img class="header__icon-img" src="assets/images/icon.svg" alt="" />
+        </picture>
+        <nav class="menu">
+          <aside class="menu__burger">
+            <span class="menu__burger-line menu__burger-line--first"></span>
+            <span class="menu__burger-line menu__burger-line--middle"></span>
+            <span class="menu__burger-line menu__burger-line--last"></span>
+          </aside>
+          <div class="menu__desktop">
+            <a class="menu__desktop-element" href="#">Главная</a>
+            <a class="menu__desktop-element" href="#">О салоне</a>
+            <a class="menu__desktop-element" href="#">Платформа</a>
+            <a class="menu__desktop-element" href="#">Библиотека</a>
+            <a class="menu__desktop-element" href="#">Новости</a>
+            <a class="menu__desktop-element" href="#">Партнеры</a>
+            <a class="menu__desktop-element" href="#">Пресса</a>
+            <div class="menu__socials">
+              <a class="menu__socials-item" href="#">
+                <svg width="11" height="22" viewBox="0 0 11 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path
+                    d="M7.14 22v-10.035h3.243l.486-3.911h-3.729v-2.497c0-1.132.303-1.904 1.866-1.904l1.994-.001v-3.498c-.345-.048-1.529-.154-2.905-.154-2.875 0-4.843 1.823-4.843 5.17v2.884h-3.251v3.911h3.251v10.035h3.888z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+              <a class="menu__socials-item" href="#">
+                <svg width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path
+                    d="M3.333 0h-2.333c-.667 0-.8.314-.8.66 0 .618.791 3.683 3.683 7.737 1.928 2.769 4.645 4.269 7.117 4.269 1.483 0 1.667-.333 1.667-.908v-2.093c0-.667.14-.8.61-.8.346 0 .939.173 2.324 1.508 1.582 1.582 1.843 2.292 2.733 2.292h2.333c.667 0 1-.333.808-.991-.21-.656-.966-1.607-1.968-2.734-.544-.643-1.36-1.335-1.607-1.681-.346-.445-.247-.643 0-1.038l.041-.059c.352-.5 2.822-4.043 3.098-5.305.148-.494 0-.858-.706-.858h-2.333c-.593 0-.867.314-1.015.66 0 0-1.187 2.892-2.868 4.771-.544.544-.791.717-1.088.717-.148 0-.363-.173-.363-.667v-4.623c0-.593-.172-.858-.667-.858h-3.667c-.371 0-.594.275-.594.536 0 .562.84.692.927 2.274v3.436c0 .753-.136.89-.433.89-.791 0-2.715-2.905-3.856-6.229-.224-.646-.448-.907-1.044-.907z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+              <a class="menu__socials-item" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.999 1.653c2.392 0 2.678.012 3.623.052.872.041 1.347.186 1.662.31.39.144.743.373 1.033.67.297.289.525.641.668 1.03.123.315.269.79.31 1.662.04.945.052 1.232.052 3.623s-.012 2.678-.055 3.623c-.047.872-.193 1.347-.315 1.662-.17.421-.359.715-.672 1.033-.291.296-.644.524-1.033.668-.311.123-.793.269-1.668.31-.95.04-1.23.052-3.629.052-2.398 0-2.678-.012-3.629-.055-.872-.047-1.353-.193-1.668-.315-.426-.17-.717-.359-1.03-.671-.315-.315-.516-.615-.67-1.033-.125-.311-.269-.793-.315-1.668l-.005-.16c-.028-.821-.042-1.211-.042-3.458 0-2.241.013-2.635.041-3.462l.006-.166c.046-.875.19-1.356.315-1.668.155-.426.356-.717.67-1.033.312-.312.604-.514 1.03-.672.315-.123.785-.268 1.66-.312l.071-.003c.895-.032 1.22-.044 3.554-.044l.037.026zm-1.761 3.098c.558-.231 1.156-.35 1.761-.35.604 0 1.202.119 1.761.35.558.231 1.065.57 1.492.997.427.427.766.934.997 1.493.231.558.35 1.156.35 1.761 0 .604-.119 1.202-.35 1.761-.231.558-.57 1.065-.997 1.493-.427.427-.934.766-1.492.997-.558.231-1.156.35-1.761.35-.604 0-1.202-.119-1.761-.35-.558-.231-1.065-.57-1.493-.997-.427-.427-.766-.934-.997-1.493-.231-.558-.35-1.156-.35-1.761 0-.604.119-1.202.35-1.761.231-.558.57-1.065.997-1.493.427-.427.934-.766 1.493-.997zm7.305.227c.202-.202.316-.475.316-.761 0-.592-.485-1.074-1.077-1.074-.141 0-.281.028-.411.082-.13.054-.249.133-.349.233-.1.1-.179.218-.233.349-.054.13-.082.27-.082.411 0 .141.028.281.082.411.054.13.133.249.233.349.1.1.218.179.349.233.13.054.27.082.411.082.285 0 .559-.113.761-.315zM8.999.04c-2.436 0-2.739.012-3.693.052-.957.047-1.605.195-2.176.417-.598.226-1.139.579-1.587 1.036-.458.446-.811.988-1.036 1.587-.222.571-.37 1.219-.417 2.176-.043.954-.052 1.257-.052 3.693s.012 2.739.052 3.693c.047.954.195 1.605.417 2.176.226.598.579 1.139 1.036 1.587.446.458.988.811 1.587 1.035.571.219 1.222.37 2.176.417.954.043 1.257.052 3.693.052s2.739-.012 3.693-.052c.954-.047 1.605-.199 2.176-.417.598-.226 1.139-.579 1.587-1.035.458-.446.812-.988 1.035-1.587.219-.571.37-1.221.417-2.176.043-.954.052-1.257.052-3.693s-.012-2.739-.052-3.693c-.047-.954-.199-1.608-.417-2.176-.226-.598-.579-1.139-1.035-1.587-.446-.458-.988-.812-1.587-1.036-.571-.222-1.221-.37-2.176-.417-.954-.043-1.257-.052-3.693-.052zm0 1.613c2.392 0 2.678.012 3.623.052.872.041 1.347.186 1.662.31.39.144.743.373 1.033.67.297.289.525.641.668 1.03.123.315.269.79.31 1.662.04.945.052 1.232.052 3.623s-.012 2.678-.055 3.623c-.047.872-.193 1.347-.315 1.662-.17.421-.359.715-.672 1.033-.291.296-.644.524-1.033.668-.311.123-.793.269-1.668.31-.95.04-1.23.052-3.629.052-2.398 0-2.678-.012-3.629-.055-.872-.047-1.353-.193-1.668-.315-.426-.17-.717-.359-1.03-.671-.315-.315-.516-.615-.67-1.033-.125-.311-.269-.793-.315-1.668l-.005-.16c-.028-.821-.042-1.211-.042-3.458 0-2.241.013-2.635.041-3.462l.006-.166c.046-.875.19-1.356.315-1.668.155-.426.356-.717.67-1.033.312-.312.604-.514 1.03-.672.315-.123.785-.268 1.66-.312l.071-.003c.895-.032 1.22-.044 3.554-.044l.037.026z"
+                    fill="#fff"
+                  />
+                  <path
+                    d="M8.999 11.988c-1.651 0-2.987-1.336-2.987-2.987s1.336-2.987 2.987-2.987 2.987 1.336 2.987 2.987-1.336 2.987-2.987 2.987z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="speakers">
+      <section class="navigation">
+        <div class="container">
+          <div class="navigation__title">Спикеры</div>
+          <form class="navigation__form" method="post">
+            <div class="navigation__search filter-search">
+              <input class="navigation__search-input filter-search__input" type="text" placeholder="Найти спикера" />
+              <button class="filter-search__loupe" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <path
+                    fill="#6e6d7a"
+                    d="M6.5 0A6.5 6.5 0 0 1 13 6.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 6.5 13a6.5 6.5 0 1 1 0-13zm0 2C4 2 2 4 2 6.5S4 11 6.5 11 11 9 11 6.5 9 2 6.5 2z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="navigation__switch filter-switch">
+              <div class="navigation__switch-text filter-switch__text">Выберите раздел</div>
+              <div class="navigation__modal filter-switch__modal">
+                <aside class="filter-plank">
+                  <div class="filter-plank__title">Все фильтры</div>
+                  <div class="navigation__close filter-plank__close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                      <path d="M3 3l10 10M3 13l10-10" stroke="#D1D1D1" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </aside>
+                <input class="filter-input" type="radio" id="filters-1" name="filters-1" checked />
+                <label class="navigation__switch-label filter-switch__modal-label" for="filters-1">Любой раздел</label>
+                <input class="filter-input" type="radio" id="filters-2" name="filters-1" />
+                <label class="navigation__switch-label filter-switch__modal-label" for="filters-2">Общее образование</label>
+                <input class="filter-input" type="radio" id="filters-3" name="filters-1" />
+                <label class="navigation__switch-label filter-switch__modal-label" for="filters-3">Программа для родителей</label>
+                <input class="filter-input" type="radio" id="filters-4" name="filters-1" />
+                <label class="navigation__switch-label filter-switch__modal-label" for="filters-4">Дополнительное образование детей</label>
+                <input class="filter-input" type="radio" id="filters-5" name="filters-1" />
+                <label class="navigation__switch-label filter-switch__modal-label" for="filters-5">Профориентация</label>
+                <input class="filter-input" type="radio" id="filters-6" name="filters-1" />
+                <label class="navigation__switch-label filter-switch__modal-label" for="filters-6">Среднее профессиональное образование</label>
+                <input class="filter-input" type="radio" id="filters-7" name="filters-1" />
+                <label class="navigation__switch-label filter-switch__modal-label" for="filters-7">Высшее образование</label>
+                <input class="filter-input" type="radio" id="filters-8" name="filters-1" />
+                <label class="navigation__switch-label filter-switch__modal-label" for="filters-8">Дополнительное профессиональное образование</label>
+                <input class="filter-input" type="radio" id="filters-9" name="filters-1" />
+                <label class="navigation__switch-label filter-switch__modal-label" for="filters-9">Образовательная политика</label>
+                <input class="filter-input" type="radio" id="filters-10" name="filters-1" />
+                <label class="navigation__switch-label filter-switch__modal-label" for="filters-10">Родительские компетенции</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="navigation__alphabet">
+          <a class="navigation__letter" href="#">A</a>
+          <a class="navigation__letter" href="#">B</a>
+          <a class="navigation__letter" href="#">C</a>
+          <a class="navigation__letter" href="#">D</a>
+          <a class="navigation__letter" href="#">E</a>
+          <a class="navigation__letter" href="#">E</a>
+          <a class="navigation__letter" href="#">F</a>
+          <a class="navigation__letter" href="#">L</a>
+          <a class="navigation__letter" href="#">M</a>
+          <a class="navigation__letter" href="#">N</a>
+          <a class="navigation__letter" href="#">O</a>
+          <a class="navigation__letter" href="#">P</a>
+          <a class="navigation__letter" href="#">Q</a>
+          <a class="navigation__letter" href="#">R</a>
+          <a class="navigation__letter" href="#">S</a>
+          <a class="navigation__letter" href="#">T</a>
+          <a class="navigation__letter" href="#">W</a>
+          <a class="navigation__letter" href="#">X</a>
+          <a class="navigation__letter" href="#">Y</a>
+          <a class="navigation__letter" href="#">Z</a>
+          <a class="navigation__letter" href="#a">А</a>
+          <a class="navigation__letter" href="#b">Б</a>
+          <a class="navigation__letter" href="#v">В</a>
+          <a class="navigation__letter" href="#">Г</a>
+          <a class="navigation__letter" href="#">Д</a>
+          <a class="navigation__letter" href="#">Е</a>
+          <a class="navigation__letter" href="#">Ё</a>
+          <a class="navigation__letter" href="#">Ж</a>
+          <a class="navigation__letter" href="#">З</a>
+          <a class="navigation__letter" href="#">И</a>
+          <a class="navigation__letter" href="#">Й</a>
+          <a class="navigation__letter" href="#">К</a>
+          <a class="navigation__letter" href="#">Л</a>
+          <a class="navigation__letter" href="#">М</a>
+          <a class="navigation__letter" href="#">Н</a>
+          <a class="navigation__letter" href="#">О</a>
+          <a class="navigation__letter" href="#">П</a>
+          <a class="navigation__letter" href="#">Р</a>
+          <a class="navigation__letter" href="#">С</a>
+          <a class="navigation__letter" href="#">Т</a>
+          <a class="navigation__letter" href="#">У</a>
+          <a class="navigation__letter" href="#">Ф</a>
+          <a class="navigation__letter" href="#">Х</a>
+          <a class="navigation__letter" href="#">Ц</a>
+          <a class="navigation__letter" href="#">Ч</a>
+          <a class="navigation__letter" href="#">Ш</a>
+          <a class="navigation__letter" href="#">Щ</a>
+          <a class="navigation__letter" href="#">Ю</a>
+          <a class="navigation__letter" href="#">Я</a>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <div class="content__letter" id="a">А</div>
+          <a class="content__speaker content__speaker--first" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker content__speaker--last" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <div class="content__letter" id="b">Б</div>
+          <a class="content__speaker content__speaker--first" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker content__speaker--last" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <div class="content__letter" id="v">В</div>
+          <a class="content__speaker content__speaker--first" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+          <a class="content__speaker content__speaker--last" href="#">
+            <div class="content__bg"></div>
+            <div class="content__avatar">
+              <picture>
+                <source media="(max-width: 950px)" srcset="assets/images/avatar-table.jpg" />
+                <source media="(max-width: 500px)" srcset="assets/images/avatar-mobail.jpg" />
+                <img src="assets/images/avatar-speaker.jpg" alt="" class="content__avatar-img" />
+              </picture>
+            </div>
+            <div class="content__data">
+              <div class="content__name">Константинопольская Алевтина</div>
+              <div class="content__job">Кандидат педагогических наук</div>
+            </div>
+            <div class="content__info">
+              <div class="content__place">Псковский государственный университет</div>
+              <div class="content__text">
+                Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации
+                «Российское общество...
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__inner">
+            <a class="footer__logo" href="#">
+              <svg width="186" height="53" viewBox="0 0 186 53" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  d="M0 0h8.397c4.585 0 9.028 11.09 10.747 13.567 1.72-2.477 6.162-13.567 10.747-13.567h8.397l-.086 21.69h-8.397l.086-13.279-6.907 12.789h-7.681l-6.907-12.76v13.279h-8.397v-21.718zM51.358 0c4.586 0 9.028 11.09 10.747 13.567 1.719-2.477 6.162-13.567 10.747-13.567h8.397v21.69h-8.397v-13.25l-6.907 12.76h-7.709l-6.907-12.76v13.279h-8.397v-21.718h8.426zM5.13 48.103c-1.806-1.642-5.13-5.559-5.13-11.723v-9.102h38.289v7.489h-29.433c.086 1.872.229 4.263 1.347 6.078 1.29 2.103 3.267 3.255 6.19 3.514h21.867v8.44h-21.867c-4.729 0-9.572-3.226-11.263-4.695zM62.076 34.738c-6.563 0-10.948 2.996-10.948 4.983 0 1.987 4.356 4.983 10.948 4.983 6.563 0 10.948-2.996 10.948-4.983 0-1.959-4.356-4.983-10.948-4.983zm0 18.06c-10.633 0-18.973-5.732-18.973-13.077 0-7.316 8.34-13.077 18.973-13.077s18.973 5.732 18.973 13.077c.029 7.345-8.311 13.077-18.973 13.077zM98.159.058v6.711h-.802v-5.185l-2.379 3.601h-.516l-2.379-3.601v5.185h-.802v-6.711h.688l2.751 4.148 2.751-4.148h.688zM101.77 2.794c-.946 0-1.691.634-1.691 1.699 0 1.066.745 1.699 1.691 1.699.946 0 1.691-.634 1.691-1.699 0-1.066-.745-1.699-1.691-1.699zm0-.749c1.261 0 2.436.835 2.436 2.42 0 1.584-1.204 2.42-2.436 2.42-1.233 0-2.436-.835-2.436-2.42 0-1.555 1.203-2.42 2.436-2.42zM107.473 2.045c.516 0 1.032.115 1.404.374v.749c-.344-.259-.831-.403-1.318-.403-.888 0-1.806.49-1.806 1.699 0 1.181.889 1.699 1.806 1.699.487 0 1.003-.144 1.376-.374v.778c-.43.202-.917.317-1.491.317-1.203 0-2.464-.749-2.464-2.391.028-1.671 1.318-2.448 2.493-2.448zM110.052 6.769v-4.609h.774v1.93h.917l1.462-1.93h.888l-1.748 2.304 1.949 2.304h-.888l-1.691-1.959h-.889v1.959h-.774zM116.959 2.794c-.945 0-1.691.634-1.691 1.699 0 1.066.746 1.699 1.691 1.699.946 0 1.691-.634 1.691-1.699 0-1.066-.745-1.699-1.691-1.699zm0-.749c1.261 0 2.436.835 2.436 2.42 0 1.584-1.203 2.42-2.436 2.42-1.232 0-2.436-.835-2.436-2.42 0-1.555 1.204-2.42 2.436-2.42zM121.258 6.107h1.72c.487 0 .831-.144.831-.662 0-.547-.401-.662-.803-.662h-1.748v1.325zm0-1.987h1.662c.402 0 .717-.144.717-.634 0-.518-.401-.662-.717-.662h-1.662v1.296zm-.745 2.65v-4.609h2.522c.803 0 1.404.432 1.404 1.239 0 .49-.257.864-.601 1.008.372.115.745.49.745 1.066 0 .749-.487 1.267-1.491 1.267h-2.579v.029zM127.907 2.045c.516 0 1.032.115 1.405.374v.749c-.344-.259-.832-.403-1.319-.403-.888 0-1.805.49-1.805 1.699 0 1.181.888 1.699 1.805 1.699.487 0 1.003-.144 1.376-.374v.778c-.43.202-.917.317-1.49.317-1.204 0-2.465-.749-2.465-2.391 0-1.671 1.29-2.448 2.493-2.448zM130.487 6.769v-4.609h.745v1.93h.946l1.432-1.93h.889l-1.72 2.304 1.949 2.304h-.917l-1.662-1.959h-.917v1.959h-.745zM135.473 6.769v-4.609h.774v3.37l2.809-3.37h.63v4.609h-.745v-3.37l-2.808 3.37h-.66zM143.211 1.469c-.458 0-.917-.086-1.347-.403v-.691c.488.317.86.432 1.347.432.488 0 .86-.115 1.347-.432v.691c-.43.288-.888.403-1.347.403zm-2.12 5.3v-4.609h.773v3.37l2.809-3.37h.659v4.609h-.774v-3.37l-2.808 3.37h-.659zM91.109 18.291v-4.609h.831l1.662 2.564 1.662-2.564h.831v4.609h-.717v-3.485l-1.49 2.276h-.573l-1.49-2.276v3.485h-.716zM99.534 14.287c-.774 0-1.519.461-1.576 1.383h2.981c.057-.519-.23-1.383-1.405-1.383zm-.057-.72c1.777 0 2.407 1.44 2.121 2.765h-3.64c.086.979.974 1.383 1.891 1.383.573 0 1.117-.144 1.519-.375v.749c-.43.231-1.032.346-1.634.346-1.347 0-2.551-.778-2.551-2.42.029-1.642 1.204-2.448 2.293-2.448zM108.218 18.291l-1.576-1.93h-.717v1.93h-.773v-1.93h-.746l-1.547 1.93h-.86l1.834-2.304-1.605-2.304h.831l1.405 1.959h.688v-1.959h.773v1.959h.688l1.405-1.959h.831l-1.605 2.304 1.834 2.304h-.86zM110.826 17.599h2.608v-3.226h-1.92c-.029 1.383-.258 2.333-.688 3.226zm-1.433 1.93v-1.93h.602c.573-1.008.803-2.189.774-3.917h3.41v3.917h.66v1.93h-.746v-1.238h-3.983v1.238h-.717zM119.166 13.682h.803l-2.265 5.3c-.487 1.123-1.06 1.527-1.719 1.527-.172 0-.315-.029-.487-.058v-.663c.143.029.258.058.401.058.516 0 .888-.375 1.175-1.123l.172-.432-2.178-4.609h.802l1.72 3.745 1.576-3.745zM120.828 18.291v-4.609h.774v1.959h2.637v-1.959h.774v4.609h-.774v-1.959h-2.637v1.959h-.774zM127.821 17.744c.573 0 1.175-.23 1.577-.663v-.835c-.316-.058-.803-.144-1.176-.144-.659 0-1.404.202-1.404.864 0 .547.487.778 1.003.778zm2.666-.058c.114 0 .229-.029.344-.058v.634c-.172.058-.373.115-.574.115-.372 0-.716-.144-.831-.547-.458.374-1.032.605-1.777.605-.802 0-1.605-.432-1.605-1.411 0-1.181 1.089-1.555 2.064-1.555.401 0 .888.058 1.261.144v-.173c0-.691-.459-1.152-1.318-1.152-.717 0-1.261.173-1.663.346v-.749c.373-.115 1.003-.317 1.749-.317 1.232 0 2.006.662 2.006 1.959v1.815c0 .259.143.346.344.346zM134.126 14.287c-.831 0-1.433.547-1.691 1.123v1.152c.258.605.86 1.123 1.691 1.123.889 0 1.605-.663 1.605-1.7 0-1.066-.716-1.699-1.605-1.699zm.086-.72c1.319 0 2.293 1.037 2.293 2.42s-.974 2.42-2.293 2.42c-.888 0-1.433-.403-1.777-.806v2.794h-.773v-6.711h.687v.778c.43-.49.975-.893 1.863-.893zM139.744 14.287c-.946 0-1.691.634-1.691 1.699 0 1.066.745 1.7 1.691 1.7.945 0 1.691-.634 1.691-1.7 0-1.066-.774-1.699-1.691-1.699zm0-.72c1.261 0 2.436.835 2.436 2.42 0 1.584-1.204 2.42-2.436 2.42-1.233 0-2.436-.835-2.436-2.42-.029-1.584 1.175-2.42 2.436-2.42zM144.128 17.599h2.609v-3.226h-1.921c-.028 1.383-.258 2.333-.688 3.226zm-1.432 1.93v-1.93h.601c.574-1.008.803-2.189.774-3.917h3.411v3.917h.659v1.93h-.745v-1.238h-3.984v1.238h-.716zM149.201 18.291v-4.609h.745v1.959h2.666v-1.959h.774v4.609h-.774v-1.959h-2.666v1.959h-.745zM159.633 13.682h.774v4.609h-.774v-4.609zm-4.069 3.917h1.318c.659 0 1.089-.259 1.089-.807 0-.547-.43-.806-1.089-.806h-1.318v1.613zm-.774.691v-4.609h.774v1.613h1.404c1.118 0 1.777.634 1.777 1.498s-.659 1.498-1.777 1.498h-2.178zM163.904 12.962c-.459 0-.918-.086-1.347-.403v-.691c.487.317.859.432 1.347.432.458 0 .859-.115 1.347-.432v.691c-.43.317-.889.403-1.347.403zm-2.093 5.329v-4.609h.774v3.37l2.809-3.37h.659v4.609h-.774v-3.37l-2.808 3.37h-.66zM93.258 25.089c.516 0 1.032.115 1.404.374v.749c-.344-.259-.831-.403-1.318-.403-.888 0-1.806.49-1.806 1.699 0 1.181.888 1.699 1.806 1.699.487 0 1.003-.144 1.376-.374v.778c-.43.202-.917.317-1.49.317-1.204 0-2.465-.749-2.465-2.391.029-1.7 1.318-2.448 2.493-2.448zM97.242 29.265c.573 0 1.175-.23 1.576-.663v-.835c-.315-.058-.802-.144-1.175-.144-.659 0-1.404.202-1.404.864 0 .518.487.778 1.003.778zm2.694-.058c.114 0 .229-.029.344-.058v.634c-.172.058-.373.115-.574.115-.373 0-.716-.144-.831-.547-.459.374-1.032.605-1.777.605-.802 0-1.605-.432-1.605-1.411 0-1.181 1.089-1.555 2.064-1.555.401 0 .888.058 1.261.144v-.173c0-.691-.459-1.152-1.318-1.152-.716 0-1.261.173-1.662.346v-.749c.373-.115 1.003-.317 1.748-.317 1.232 0 2.006.663 2.006 1.959v1.815c-.029.259.143.346.344.346zM101.053 29.87c-.172 0-.344-.029-.544-.115v-.605c.114.029.2.058.315.058.802 0 1.089-1.555 1.175-4.033h3.382v4.609h-.774v-3.889h-1.863c-.172 2.362-.487 3.975-1.691 3.975zM108.877 25.809c-.945 0-1.691.634-1.691 1.699 0 1.066.746 1.699 1.691 1.699.946 0 1.691-.634 1.691-1.699 0-1.066-.745-1.699-1.691-1.699zm0-.72c1.261 0 2.436.835 2.436 2.42 0 1.584-1.203 2.42-2.436 2.42-1.232 0-2.436-.835-2.436-2.42 0-1.584 1.204-2.42 2.436-2.42zM112.431 29.813v-4.609h.774v1.93h2.637v-1.93h.773v4.609h-.773v-1.959h-2.637v1.959h-.774zM122.519 25.809c-.946 0-1.691.634-1.691 1.699 0 1.066.745 1.699 1.691 1.699.946 0 1.691-.634 1.691-1.699 0-1.066-.745-1.699-1.691-1.699zm0-.72c1.261 0 2.436.835 2.436 2.42 0 1.584-1.203 2.42-2.436 2.42-1.232 0-2.436-.835-2.436-2.42 0-1.584 1.204-2.42 2.436-2.42zM128.194 29.179c1.003 0 1.605-.662 1.605-1.527 0-.864-.602-1.527-1.605-1.527-.946 0-1.605.749-1.605 1.527 0 .864.63 1.527 1.605 1.527zm.028.749c-1.375 0-2.378-.951-2.378-2.708 0-1.555.602-2.621 1.404-3.14 1.318-.806 2.236-.461 2.895-1.123v.806c-.659.461-1.405.259-2.436.893-.631.374-.889 1.008-1.089 1.584.315-.518.974-.864 1.69-.864 1.204 0 2.265.864 2.265 2.247-.029 1.44-.975 2.304-2.351 2.304zM134.126 25.78c-.831 0-1.433.547-1.691 1.123v1.152c.258.605.86 1.123 1.691 1.123.889 0 1.605-.662 1.605-1.7 0-1.037-.716-1.699-1.605-1.699zm.086-.691c1.319 0 2.293 1.037 2.293 2.42s-.974 2.42-2.293 2.42c-.888 0-1.433-.403-1.777-.806v2.794h-.773v-6.711h.687v.778c.402-.49.975-.893 1.863-.893zM138.998 29.265c.574 0 1.175-.23 1.577-.663v-.835c-.316-.058-.803-.144-1.175-.144-.659 0-1.405.202-1.405.864 0 .518.488.778 1.003.778zm2.666-.058c.114 0 .229-.029.344-.058v.634c-.172.058-.373.115-.573.115-.373 0-.717-.144-.832-.547-.458.374-1.031.605-1.777.605-.802 0-1.604-.432-1.604-1.411 0-1.181 1.089-1.555 2.063-1.555.401 0 .888.058 1.261.144v-.173c0-.691-.458-1.152-1.318-1.152-.717 0-1.261.173-1.663.346v-.749c.373-.115 1.004-.317 1.749-.317 1.232 0 2.006.663 2.006 1.959v1.815c0 .259.143.346.344.346zM144.214 29.928c-.659 0-1.261-.144-1.69-.346v-.72c.401.202 1.031.374 1.604.374.717 0 1.405-.144 1.405-.72s-.545-.663-1.003-.663h-1.003v-.72h1.003c.516 0 .917-.144.917-.605 0-.518-.545-.72-1.261-.72-.545 0-1.147.144-1.548.374v-.72c.459-.202 1.032-.346 1.634-.346 1.289 0 1.949.518 1.949 1.325 0 .547-.344.922-.86 1.037.516.144.946.519.946 1.123-.029.835-.832 1.325-2.093 1.325zM149.516 25.809c-.945 0-1.69.634-1.69 1.699 0 1.066.745 1.699 1.69 1.699.946 0 1.691-.634 1.691-1.699 0-1.066-.745-1.699-1.691-1.699zm0-.72c1.261 0 2.437.835 2.437 2.42 0 1.584-1.204 2.42-2.437 2.42-1.232 0-2.436-.835-2.436-2.42 0-1.584 1.204-2.42 2.436-2.42zM153.844 29.121h1.72c.487 0 .831-.144.831-.663 0-.547-.401-.663-.803-.663h-1.748v1.325zm0-1.988h1.662c.402 0 .717-.144.717-.634 0-.518-.401-.663-.717-.663h-1.662v1.296zm-.774 2.679v-4.609h2.522c.803 0 1.405.432 1.405 1.239 0 .49-.258.864-.602 1.008.372.115.745.49.745 1.066 0 .749-.487 1.267-1.49 1.267h-2.58v.029zM159.691 29.265c.573 0 1.175-.23 1.576-.663v-.835c-.315-.058-.803-.144-1.175-.144-.659 0-1.404.202-1.404.864 0 .518.487.778 1.003.778zm2.694-.058c.114 0 .229-.029.344-.058v.634c-.172.058-.373.115-.574.115-.372 0-.716-.144-.831-.547-.458.374-1.032.605-1.777.605-.802 0-1.605-.432-1.605-1.411 0-1.181 1.089-1.555 2.064-1.555.401 0 .888.058 1.261.144v-.173c0-.691-.459-1.152-1.318-1.152-.717 0-1.261.173-1.663.346v-.749c.373-.115 1.003-.317 1.749-.317 1.232 0 2.006.663 2.006 1.959v1.815c-.029.259.143.346.344.346zM163.56 29.813v-4.609h.745v1.93h2.665v-1.93h.774v4.609h-.774v-1.959h-2.665v1.959h-.745zM169.148 29.813v-4.609h.774v3.37l2.809-3.37h.63v4.609h-.745v-3.37l-2.809 3.37h-.659zM176.342 27.508h1.433v-1.613h-1.433c-.631 0-1.032.288-1.032.806s.401.807 1.032.807zm-2.006 2.304l1.318-1.7c-.717-.202-1.089-.778-1.089-1.411 0-.806.602-1.498 1.719-1.498h2.265v4.609h-.774v-1.613h-1.29l-1.261 1.613h-.888zM98.331 34.594v6.74h-1.433v-4.148l-1.748 2.708h-.831l-1.777-2.708v4.148h-1.433v-6.74h1.318l2.293 3.514 2.293-3.514h1.318zM101.77 37.763c-.745 0-1.175.547-1.175 1.239 0 .72.43 1.239 1.175 1.239.774 0 1.175-.547 1.175-1.239.028-.691-.401-1.239-1.175-1.239zm0-1.181c1.347 0 2.522.835 2.522 2.448s-1.204 2.448-2.522 2.448c-1.319 0-2.522-.835-2.522-2.448s1.203-2.448 2.522-2.448zM106.871 36.581c.659 0 1.233.173 1.691.403v1.095c-.401-.259-1.06-.461-1.605-.461-.286 0-.63.086-.63.374 0 .778 2.579.375 2.579 2.074 0 1.095-.974 1.411-2.092 1.411-.688 0-1.347-.144-1.834-.432v-1.095c.487.317 1.203.49 1.748.49.487 0 .802-.086.802-.346 0-.749-2.579-.403-2.579-2.074.029-1.095.974-1.44 1.92-1.44zM112.059 36.581c.515 0 1.003.115 1.404.346v1.181c-.315-.202-.774-.346-1.232-.346-.717 0-1.433.346-1.433 1.296 0 .893.687 1.296 1.404 1.296.487 0 .946-.144 1.29-.346v1.181c-.459.202-.975.317-1.548.317-1.261 0-2.493-.72-2.493-2.362.028-1.815 1.347-2.564 2.608-2.564zM116.673 37.763c-.745 0-1.175.547-1.175 1.239 0 .72.43 1.239 1.175 1.239.774 0 1.175-.547 1.175-1.239.028-.691-.401-1.239-1.175-1.239zm0-1.181c1.347 0 2.522.835 2.522 2.448s-1.204 2.448-2.522 2.448c-1.319 0-2.522-.835-2.522-2.448s1.203-2.448 2.522-2.448zM127.076 36.725l-1.462 4.609h-1.404l-.917-3.024-.917 3.024h-1.404l-1.462-4.609h1.404l.831 3.14.918-3.14h1.261l.917 3.14.831-3.14h1.404zM129.684 36.725h1.318v4.609h-1.318v-4.609zm.659-.778c-.401 0-.774-.23-.774-.749s.373-.749.774-.749c.43 0 .774.23.774.749 0 .518-.372.749-.774.749zM134.843 36.581c1.204 0 1.863.835 1.863 1.901v2.852h-1.319v-2.679c0-.634-.372-.922-.888-.922-.459 0-.831.317-1.032.576v2.996h-1.318v-4.609h1.175v.576c.344-.374.86-.691 1.519-.691zM139.4 35.055v1.671h1.461v1.123h-1.461v1.815c0 .49.229.691.745.691.315 0 .573-.058.831-.144v1.066c-.344.115-.774.202-1.232.202-.889 0-1.663-.403-1.663-1.555v-2.074h-.773v-1.123h.773v-1.354l1.319-.317zM143.871 37.59c-.574 0-1.061.346-1.089.979h2.034c.086-.288-.114-.979-.945-.979zm-.029-1.008c1.891 0 2.522 1.498 2.207 2.881h-3.239c.143.662.86.95 1.605.95.516 0 1.003-.115 1.376-.288v1.037c-.43.173-1.003.288-1.691.288-1.462 0-2.665-.835-2.665-2.448.028-1.728 1.375-2.42 2.407-2.42zM149.975 36.61v1.296c-.716-.115-1.433.144-1.691.691v2.708h-1.318v-4.609h1.175v.691c.315-.49.974-.864 1.834-.778zM153.386 36.581c1.203 0 1.862.835 1.862 1.901v2.852h-1.318v-2.679c0-.634-.373-.922-.888-.922-.459 0-.832.317-1.032.576v2.996h-1.318v-4.609h1.175v.576c.343-.374.859-.691 1.519-.691zM157.341 39.952c0 .346.315.576.716.576.373 0 .716-.115 1.032-.374v-.72c-.201-.058-.516-.115-.774-.115-.487 0-.974.144-.974.634zm3.41.49l.258-.029v.864c-.201.086-.487.144-.745.144-.459 0-.831-.173-1.003-.518-.459.346-.975.576-1.663.576-.859 0-1.604-.49-1.604-1.411 0-1.181 1.089-1.527 2.006-1.527.372 0 .773.058 1.089.115v-.173c0-.461-.373-.778-1.089-.778-.631 0-1.204.173-1.634.346v-1.152c.373-.115 1.06-.317 1.777-.317 1.376 0 2.264.576 2.264 2.074v1.469c0 .259.172.317.344.317zM163.244 35.055v1.671h1.462v1.123h-1.462v1.815c0 .49.23.691.746.691.315 0 .573-.058.831-.144v1.066c-.344.115-.774.202-1.233.202-.888 0-1.662-.403-1.662-1.555v-2.074h-.774v-1.123h.774v-1.354l1.318-.317zM165.566 36.725h1.318v4.609h-1.318v-4.609zm.659-.778c-.401 0-.774-.23-.774-.749s.373-.749.774-.749c.43 0 .774.23.774.749.028.518-.344.749-.774.749zM170.323 37.763c-.745 0-1.175.547-1.175 1.239 0 .72.43 1.239 1.175 1.239.774 0 1.175-.547 1.175-1.239 0-.691-.401-1.239-1.175-1.239zm0-1.181c1.347 0 2.522.835 2.522 2.448s-1.203 2.448-2.522 2.448c-1.318 0-2.522-.835-2.522-2.448s1.204-2.448 2.522-2.448zM176.428 36.581c1.203 0 1.863.835 1.863 1.901v2.852h-1.319v-2.679c0-.634-.372-.922-.888-.922-.459 0-.831.317-1.032.576v2.996h-1.318v-4.609h1.175v.576c.344-.374.86-.691 1.519-.691zM180.383 39.952c0 .346.315.576.716.576.373 0 .717-.115 1.032-.374v-.72c-.201-.058-.516-.115-.774-.115-.516 0-.974.144-.974.634zm3.382.49l.257-.029v.864c-.2.086-.487.144-.745.144-.458 0-.831-.173-1.003-.518-.458.346-.974.576-1.662.576-.86 0-1.605-.49-1.605-1.411 0-1.181 1.089-1.527 2.006-1.527.373 0 .774.058 1.089.115v-.173c0-.461-.372-.778-1.089-.778-.63 0-1.203.173-1.633.346v-1.152c.372-.115 1.06-.317 1.777-.317 1.375 0 2.264.576 2.264 2.074v1.469c.028.259.172.317.344.317zM186 34.306h-1.318v6.999h1.318v-6.999zM93.115 49.111c-.573 0-1.06.346-1.089.979h2.035c.057-.317-.115-.979-.946-.979zm-.057-1.008c1.892 0 2.522 1.498 2.207 2.88h-3.239c.143.663.86.95 1.605.95.516 0 1.003-.115 1.376-.288v1.037c-.43.173-1.003.288-1.691.288-1.462 0-2.665-.835-2.665-2.448.057-1.728 1.376-2.419 2.407-2.419zM98.474 49.227c-.745 0-1.204.605-1.204 1.325s.459 1.325 1.204 1.325c.573 0 1.003-.374 1.204-.778v-1.095c-.172-.432-.602-.778-1.204-.778zm2.522-3.111v6.711h-1.175v-.662c-.286.403-.831.806-1.662.806-1.462 0-2.235-1.181-2.235-2.448s.774-2.448 2.235-2.448c.717 0 1.204.288 1.519.634v-2.592h1.318zM106.613 48.218v4.609h-1.175v-.576c-.344.403-.888.72-1.519.72-1.232 0-1.863-.835-1.863-1.901v-2.852h1.319v2.679c0 .605.344.922.888.922.487 0 .831-.317 1.032-.576v-2.996h1.318v-.029zM110.081 48.075c.516 0 1.003.115 1.404.346v1.181c-.315-.202-.773-.346-1.232-.346-.716 0-1.433.346-1.433 1.296 0 .893.688 1.296 1.404 1.296.488 0 .946-.144 1.29-.346v1.181c-.459.202-.974.317-1.548.317-1.261 0-2.493-.72-2.493-2.362.029-1.815 1.347-2.563 2.608-2.563zM113.463 51.445c0 .346.315.576.716.576.373 0 .717-.115 1.032-.374v-.72c-.201-.058-.516-.115-.774-.115-.516 0-.974.173-.974.634zm3.382.518l.258-.029v.864c-.201.086-.488.144-.746.144-.458 0-.831-.173-1.003-.518-.458.346-.974.576-1.662.576-.86 0-1.605-.49-1.605-1.411 0-1.181 1.089-1.527 2.006-1.527.373 0 .774.058 1.089.115v-.173c0-.461-.372-.778-1.089-.778-.63 0-1.203.173-1.633.346v-1.152c.372-.115 1.06-.317 1.777-.317 1.375 0 2.264.576 2.264 2.074v1.469c.028.23.172.317.344.317zM119.338 46.577v1.671h1.462v1.123h-1.462v1.815c0 .49.229.691.745.691.315 0 .573-.058.831-.144v1.066c-.344.115-.773.202-1.232.202-.888 0-1.662-.403-1.662-1.555v-2.074h-.774v-1.123h.774v-1.354l1.318-.317zM121.688 48.218h1.318v4.609h-1.318v-4.609zm.659-.749c-.401 0-.774-.23-.774-.749 0-.518.373-.749.774-.749.43 0 .774.23.774.749s-.372.749-.774.749zM126.417 49.284c-.745 0-1.175.547-1.175 1.239 0 .72.43 1.239 1.175 1.239.774 0 1.175-.547 1.175-1.239.029-.691-.401-1.239-1.175-1.239zm0-1.181c1.347 0 2.522.835 2.522 2.448s-1.204 2.448-2.522 2.448c-1.318 0-2.522-.835-2.522-2.448s1.204-2.448 2.522-2.448zM132.521 48.103c1.204 0 1.863.835 1.863 1.901v2.852h-1.318v-2.679c0-.634-.373-.922-.888-.922-.459 0-.832.317-1.032.576v2.996h-1.319v-4.609h1.175v.576c.344-.403.86-.691 1.519-.691zM138.024 52.827v-3.485h-.802v-1.123h.802v-.461c0-1.383.946-1.786 1.806-1.786.429 0 .831.087 1.117.202v1.123c-.2-.115-.487-.202-.802-.202-.43 0-.831.144-.831.72v.403h1.404v1.123h-1.404v3.485h-1.29zM142.409 51.445c0 .346.315.576.716.576.373 0 .717-.115 1.032-.374v-.72c-.2-.058-.516-.115-.774-.115-.516 0-.974.173-.974.634zm3.382.518l.258-.029v.864c-.201.086-.488.144-.745.144-.459 0-.832-.173-1.004-.518-.458.346-.974.576-1.662.576-.86 0-1.605-.49-1.605-1.411 0-1.181 1.089-1.527 2.006-1.527.373 0 .774.058 1.089.115v-.173c0-.461-.372-.778-1.089-.778-.63 0-1.203.173-1.633.346v-1.152c.372-.115 1.06-.317 1.777-.317 1.375 0 2.264.576 2.264 2.074v1.469c.028.23.172.317.344.317zM146.679 48.218h1.319v4.609h-1.319v-4.609zm.659-.749c-.401 0-.773-.23-.773-.749 0-.518.372-.749.773-.749.43 0 .774.23.774.749.029.519-.344.749-.774.749zM152.182 48.132v1.296c-.717-.115-1.433.144-1.691.691v2.708h-1.318v-4.609h1.175v.691c.315-.49.974-.864 1.834-.778z"
+                  fill="#046552"
+                />
+              </svg>
+            </a>
+            <div class="footer__icon">
+              <svg width="78" height="67" viewBox="0 0 78 67" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  d="M18.381 27.271h-1.709v4.535h1.709v-4.535zM21.326 27.271h-1.709v4.535h1.709v-4.535zM24.272 27.271h-1.708v4.535h1.708v-4.535zM27.276 27.271h-1.708v4.535h1.708v-4.535zM30.222 27.271h-1.826v4.535h1.826v-4.535zM33.168 27.271h-1.826v4.535h1.826v-4.535zM36.054 27.271h-1.709v4.535h1.709v-4.535zM39 27.271h-1.709v4.535h1.709v-4.535zM41.946 27.271h-1.708v4.535h1.708v-4.535zM44.95 27.271h-1.709v4.535h1.709v-4.535zM47.896 27.271h-1.826v4.535h1.826v-4.535zM50.841 27.271h-1.826v4.535h1.826v-4.535zM53.728 27.271h-1.709v4.535h1.709v-4.535zM56.674 27.271h-1.708v4.535h1.708v-4.535zM59.619 27.271h-1.708v4.535h1.708v-4.535zM62.624 27.271h-1.709v4.535h1.709v-4.535zM18.381 32.323h-1.709v1.78h1.709v-1.78zM21.326 32.323h-1.709v1.78h1.709v-1.78zM24.272 32.323h-1.708v1.78h1.708v-1.78zM27.276 32.323h-1.708v1.78h1.708v-1.78zM28.396 32.323h1.826v1.837h-1.826v-1.837zM31.341 32.38l1.826-.057v1.837h-1.826v-1.78zM36.054 32.323h-1.709v1.78h1.709v-1.78zM39 32.323h-1.709v1.78h1.709v-1.78zM41.946 32.323h-1.708v1.78h1.708v-1.78zM44.95 32.323h-1.709v1.78h1.709v-1.78zM46.069 32.323l1.826.057v1.78h-1.826v-1.837zM49.015 32.38l1.826-.057v1.837h-1.826v-1.78zM53.728 32.323h-1.709v1.78h1.709v-1.78zM56.674 32.323h-1.708v1.78h1.708v-1.78zM59.619 32.323h-1.708v1.78h1.708v-1.78zM62.624 32.323h-1.709v1.78h1.709v-1.78zM22.387 23.711h-1.532v.632h1.532v-.632zM24.802 23.711h-1.708v.632h1.708v-.632zM27.218 23.711h-1.708v.632h1.708v-.632zM29.456 23.711h-1.532v.632h1.532v-.632zM41.356 23.711h-1.708v.632h1.708v-.632zM38.941 23.711h-1.709v.632h1.709v-.632zM36.526 23.711h-1.532v.632h1.532v-.632zM31.872 23.711h-1.709v.632h1.709v-.632zM34.287 23.711h-1.708v.632h1.708v-.632zM55.495 23.711h-1.709v.632h1.709v-.632zM53.08 23.711h-1.709v.632h1.709v-.632zM50.665 23.711h-1.532v.632h1.532v-.632zM48.426 23.711h-1.709v.632h1.709v-.632zM46.011 23.711h-1.708v.632h1.708v-.632zM43.654 23.711h-1.591v.632h1.591v-.632zM22.387 21.53h-1.532v1.263h1.532v-1.263zM57.734 23.711h-1.532v.632h1.532v-.632zM24.802 21.53h-1.708v1.263h1.708v-1.263zM27.218 21.53h-1.708v1.263h1.708v-1.263zM29.515 21.53h-1.591v1.263h1.591v-1.263zM31.872 21.53h-1.709v1.263h1.709v-1.263zM34.287 21.53h-1.708v1.263h1.708v-1.263zM36.526 21.53h-1.532v1.263h1.532v-1.263zM38.941 21.53h-1.709v1.263h1.709v-1.263zM50.665 21.53h-1.532v1.263h1.532v-1.263zM48.426 21.53h-1.709v1.263h1.709v-1.263zM46.011 21.53h-1.708v1.263h1.708v-1.263zM43.654 21.53h-1.591v1.263h1.591v-1.263zM41.356 21.53h-1.708v1.263h1.708v-1.263zM57.734 21.53h-1.532v1.263h1.532v-1.263zM55.495 21.53h-1.709v1.263h1.709v-1.263zM53.08 21.53h-1.709v1.263h1.709v-1.263zM22.387 19.176h-1.532v1.263h1.532v-1.263zM24.802 19.176h-1.708v1.263h1.708v-1.263zM27.218 19.176h-1.708v1.263h1.708v-1.263zM29.515 19.176h-1.591v1.263h1.591v-1.263zM31.872 19.176h-1.709v1.263h1.709v-1.263zM34.287 19.176h-1.708v1.263h1.708v-1.263zM36.526 19.176h-1.532v1.263h1.532v-1.263zM38.941 19.176h-1.709v1.263h1.709v-1.263zM50.665 19.176h-1.532v1.263h1.532v-1.263zM48.426 19.176h-1.709v1.263h1.709v-1.263zM46.011 19.176h-1.708v1.263h1.708v-1.263zM43.654 19.176h-1.591v1.263h1.591v-1.263zM41.356 19.176h-1.708v1.263h1.708v-1.263zM57.734 19.176h-1.532v1.263h1.532v-1.263zM55.495 19.176h-1.709v1.263h1.709v-1.263zM53.08 19.176h-1.709v1.263h1.709v-1.263zM22.387 16.937h-1.532v1.263h1.532v-1.263zM24.802 16.937h-1.708v1.263h1.708v-1.263zM27.218 16.937h-1.708v1.263h1.708v-1.263zM29.515 16.937h-1.591v1.263h1.591v-1.263zM31.872 16.937h-1.709v1.263h1.709v-1.263zM34.287 16.937h-1.708v1.263h1.708v-1.263zM36.526 16.937h-1.532v1.263h1.532v-1.263zM38.941 16.937h-1.709v1.263h1.709v-1.263zM50.665 16.937h-1.532v1.263h1.532v-1.263zM48.426 16.937h-1.709v1.263h1.709v-1.263zM46.011 16.937h-1.708v1.263h1.708v-1.263zM43.654 16.937h-1.591v1.263h1.591v-1.263zM41.356 16.937h-1.708v1.263h1.708v-1.263zM57.734 16.937h-1.532v1.263h1.532v-1.263zM55.495 16.937h-1.709v1.263h1.709v-1.263zM53.08 16.937h-1.709v1.263h1.709v-1.263zM22.387 14.64h-1.532v1.263h1.532v-1.263zM24.802 14.64h-1.708v1.263h1.708v-1.263zM27.218 14.64h-1.708v1.263h1.708v-1.263zM29.515 14.64h-1.591v1.263h1.591v-1.263zM31.872 14.64h-1.709v1.263h1.709v-1.263zM34.287 14.64h-1.708v1.263h1.708v-1.263zM36.526 14.64h-1.532v1.263h1.532v-1.263zM38.941 14.64h-1.709v1.263h1.709v-1.263zM50.665 14.64h-1.532v1.263h1.532v-1.263zM48.426 14.64h-1.709v1.263h1.709v-1.263zM46.011 14.64h-1.708v1.263h1.708v-1.263zM43.654 14.64h-1.591v1.263h1.591v-1.263zM41.356 14.64h-1.708v1.263h1.708v-1.263zM57.734 14.64h-1.532v1.263h1.532v-1.263zM55.495 14.64h-1.709v1.263h1.709v-1.263zM53.08 14.64h-1.709v1.263h1.709v-1.263zM22.387 12.286h-1.532v1.263h1.532v-1.263zM24.802 12.286h-1.708v1.263h1.708v-1.263zM27.218 12.286h-1.708v1.263h1.708v-1.263zM29.515 12.286h-1.591v1.263h1.591v-1.263zM31.872 12.286h-1.709v1.263h1.709v-1.263zM34.287 12.286h-1.708v1.263h1.708v-1.263zM36.526 12.286h-1.532v1.263h1.532v-1.263zM38.941 12.286h-1.709v1.263h1.709v-1.263zM50.665 12.286h-1.532v1.263h1.532v-1.263zM48.426 12.286h-1.709v1.263h1.709v-1.263zM46.011 12.286h-1.708v1.263h1.708v-1.263zM43.654 12.286h-1.591v1.263h1.591v-1.263zM41.356 12.286h-1.708v1.263h1.708v-1.263zM57.734 12.286h-1.532v1.263h1.532v-1.263zM55.495 12.286h-1.709v1.263h1.709v-1.263zM53.08 12.286h-1.709v1.263h1.709v-1.263zM74.996 34.677v-10.908h-.707v.517h-2.239v-.574h-3.535v.574h-2.415v-.517h-.53v1.091l-1.826 1.091h-4.124v-14.353h.589v-3.445h-.589v-.574h-7.659v-.574h-1.826v.574h-9.897v-3.445h-1.296v-2.354h2.946v-1.78h-3.535v4.248h-1.119v3.445h-10.015v-.574h-1.826v.574h-6.363l-.589.574v3.617h.589v-2.354h.53v1.78h.589v-1.78h.589v1.78h.707v-1.78h.412v1.78h.707v-1.78h.412v1.78h.707v-1.78h.589v1.78h.707v-1.78h.412v1.78h.707v-1.78h.412v1.78h.707v-1.78h.589v1.78h.707v-1.78h.412v1.78h.707v-1.78h.412v1.78h.707v-1.78h.589v1.78h.707v-1.78h.412v1.78h.707v-1.78h.412v1.78h.707v-1.78h.589v1.78h.707v-1.78h.412v1.78h.707v-1.78h.412v1.78h.707v-1.78h.589v1.78h.707v-1.78h.412v1.78h.707v-1.78h.412v1.78h.707v-1.78h.53v1.78h.707v-1.78h.412v1.78h.707v-1.78h.412v1.78h.707v-1.78h.589v1.78h.707v-1.78h.412v1.78h.707v-1.78h.471v1.78h.707v-1.78h.589v1.78h.707v-1.78h.412v1.78h.707v-1.78h.412v1.78h.707v-1.78h.53v1.78h.707v-1.78h.412v1.78h.648v-1.78h.471v1.78h.707v-1.78h.589v1.78h.707v-1.78h.412v1.78h.707v-1.78h.412v1.78h.707v-1.78h.589v2.182h-.53v14.468h-1.296v-1.206h-1.532v1.206h-.707v-1.206h-1.709v1.206h-.707v-1.206h-1.709v1.206h-.707v-1.206h-1.532v1.206h-.707v-1.206h-1.709v1.206h-.707v-1.206h-1.708v1.206h-.707v-1.206h-1.532v1.206h-.707v-1.206h-1.708v1.206h-.707v-1.206h-1.709v1.206h-.707v-1.206h-1.532v1.206h-.707v-1.206h-1.708v1.206h-.707v-1.206h-1.709v1.206h-.707v-1.206h-1.532v1.206h-.707v-1.206h-1.708v1.206h-.707v-1.206h-1.708v1.206h-.707v-1.206h-1.532v1.206h-1.296v-14.41h-.53l-.059 14.41h-3.653l-1.767-1.78v-.574h-.53v.517h-2.415v-.517h-3.535v.574h-2.239v-.517h-.707v10.908h-4.124v1.091h77.764v-1.091l-2.769-.115zm-54.848-25.663h-.707v-.746h.707v.746zm1.237 0h-.707v-.746h.707v.746zm1.178 0h-.707v-.746h.707v.746zm1.119 0h-.707v-.746h.707v.746zm1.237 0h-.707v-.746h.707v.746zm1.178 0h-.707v-.746h.707v.746zm1.119 0h-.707v-.746h.707v.746zm1.237 0h-.707v-.746h.707v.746zm.471 0v-.746h.707v.746h-.707zm1.826 0h-.707v-.746h.707v.746zm1.237 0h-.707v-.746h.707v.746zm.471 0v-.746h.707v.746h-.707zm1.119 0v-.746h.707v.746h-.707zm1.944 0h-.707v-.746h.707v.746zm1.119 0h-.707v-.746h.707v.746zm1.178 0h-.707v-.746h.707v.746zm1.237 0h-.707v-.746h.707v.746zm-1.237-1.837v-.689h1.708v.689h-1.708zm2.356 1.837h-.707v-.746h.707v.746zm.471 0v-.746h.707v.746h-.707zm1.944 0h-.707v-.746h.707v.746zm1.119 0h-.707v-.746h.707v.746zm1.178 0h-.707v-.746h.707v.746zm1.237 0h-.707v-.746h.707v.746zm1.119 0h-.707v-.746h.707v.746zm1.178 0h-.707v-.746h.707v.746zm1.237 0h-.707v-.746h.707v.746zm1.119 0h-.707v-.746h.707v.746zm1.178 0h-.707v-.746h.707v.746zm1.237 0h-.707v-.746h.707v.746zm1.119 0h-.707v-.746h.707v.746zm1.178 0h-.707v-.746h.707v.746zm1.237 0h-.707v-.746h.707v.746zm1.119 0h-.707v-.746h.707v.746zm1.178 0h-.707v-.746h.707v.746zm-47.071 25.663v-7.98h-.589v7.98h-1.296v-8.669h.53v-.517h-3.535v.574h.707v8.669h-1.237v-7.98h-.589v7.98h-1.06v-9.76h8.189v9.76l-1.119-.057zm51.725 0h-48.19v-7.98h48.19v7.98zm9.485 0v-7.98h-.707v7.98h-1.119v-8.669h.707v-.574h-3.535v.574h.589v8.669h-1.119v-7.98h-.766v7.98h-1.119v-9.76h8.189v9.76h-1.119zM.177 41.739h5.008v6.143h-1.237v-5.11h-2.474v5.11h-1.296v-6.143zM6.539 41.739h2.062c.766 0 1.296.058 1.532.115.354.115.648.287.884.632.236.287.354.689.354 1.206 0 .402-.059.689-.236.976-.177.287-.294.459-.53.632-.236.172-.412.23-.648.287-.295.057-.766.115-1.296.115h-.825v2.354h-1.296v-6.315zm1.237 2.813h.707c.53 0 .825-.057 1.002-.115.177-.057.295-.172.412-.287.118-.115.118-.287.118-.459 0-.23-.059-.402-.177-.574-.118-.172-.295-.23-.53-.287-.177 0-.471-.057-.943-.057h-.589v1.78zM17.32 47.939h-1.355l-.589-1.435h-2.533l-.53 1.378h-1.355l2.474-6.143h1.355l2.533 6.201zm-2.297-2.469l-.884-2.296-.884 2.296h1.767zM20.56 41.739c.471 0 .884 0 1.119.058.236.057.471.115.648.23.177.115.354.287.471.517.118.23.177.459.177.746s-.059.574-.236.804c-.177.23-.354.402-.648.517.412.115.707.287.884.574.177.287.295.574.295.919 0 .287-.059.574-.177.804-.118.287-.295.459-.53.632-.236.172-.53.23-.884.287-.236 0-.707.057-1.532.057h-2.18v-6.143h2.592zm-1.237 1.034v1.435h1.767c.236 0 .412-.115.53-.23.118-.115.177-.287.177-.459 0-.172-.059-.344-.177-.459-.118-.115-.294-.172-.471-.23h-1.826v-.057zm0 2.469v1.665h1.178c.471 0 .766 0 .884-.057.177-.057.354-.115.471-.23.118-.115.177-.287.177-.517 0-.172-.059-.344-.118-.459-.059-.115-.236-.23-.412-.287-.177-.057-.53-.115-1.119-.115h-1.06zM24.449 41.739h1.178v4.076l2.592-4.076h1.296v6.143h-1.178v-4.019l-2.533 4.019h-1.296v-6.143h-.059zM32.166 47.939v-5.11h-1.885v-1.033h5.008v1.033h-1.885v5.11h-1.237zM36.172 47.939v-6.201h4.713v1.034h-3.417v1.378h3.181v1.033h-3.181v1.665h3.535v1.033h-4.831v.057zM42.476 41.739h4.419v6.143h-1.296v-5.11h-1.885v2.641c0 .746 0 1.263-.059 1.608-.059.287-.177.517-.353.689-.177.172-.53.23-.943.23-.177 0-.412 0-.825-.057v-.976h.295c.295 0 .471-.057.53-.115.059-.057.118-.23.118-.517v-4.536zM49.545 41.739v2.469h1.709c.825 0 1.414.172 1.767.574.353.344.53.804.53 1.32 0 .402-.118.804-.354 1.091-.236.287-.471.517-.766.574-.294.115-.707.172-1.237.172h-3.005v-6.201h1.355zm0 5.167h1.237c.412 0 .707 0 .825-.057.177-.057.294-.115.412-.287.118-.115.177-.287.177-.517 0-.287-.118-.517-.295-.632-.236-.115-.589-.172-1.06-.172h-1.296v1.665zM58.441 45.643l1.237.402c-.177.689-.53 1.148-.943 1.493-.471.344-1.002.517-1.709.517-.825 0-1.532-.287-2.062-.861-.53-.574-.825-1.32-.825-2.297 0-1.033.295-1.837.825-2.411.53-.574 1.237-.861 2.121-.861.766 0 1.414.23 1.885.689.295.287.53.631.648 1.148l-1.237.287c-.059-.345-.236-.574-.471-.746-.236-.172-.53-.287-.884-.287-.471 0-.825.172-1.119.517-.295.344-.412.861-.412 1.608 0 .804.118 1.32.412 1.665.294.344.648.517 1.119.517.353 0 .648-.115.884-.287.236-.287.412-.632.53-1.091zM61.976 47.939v-5.11h-1.885v-1.033h5.008v1.033h-1.885v5.11h-1.237zM65.923 41.739h2.533c.471 0 .884 0 1.119.058.236.057.471.115.648.23.177.115.353.287.471.517.118.23.177.459.177.746s-.059.574-.236.804c-.177.23-.353.402-.648.517.412.115.707.287.884.574.177.287.295.574.295.919 0 .287-.059.574-.177.804-.118.287-.294.459-.53.632-.236.172-.53.23-.884.287-.236 0-.707.057-1.532.057h-2.18l.059-6.143zm1.296 1.034v1.435h1.767c.236 0 .412-.115.53-.23.118-.115.177-.287.177-.459 0-.172-.059-.344-.177-.459-.118-.115-.294-.172-.471-.23h-1.826v-.057zm0 2.469v1.665h1.178c.471 0 .766 0 .884-.057.177-.057.353-.115.471-.23s.177-.287.177-.517c0-.172-.059-.344-.118-.459-.059-.115-.236-.23-.412-.287-.177-.057-.53-.115-1.119-.115h-1.061zM71.873 44.896c0-.631.118-1.148.295-1.607.118-.287.353-.574.589-.861.236-.23.53-.459.825-.574.412-.172.825-.23 1.355-.23.943 0 1.65.287 2.239.861.53.574.825 1.321.825 2.354 0 .976-.295 1.78-.825 2.354-.53.574-1.296.861-2.239.861-.943 0-1.709-.287-2.239-.861-.589-.574-.825-1.32-.825-2.297zm1.296-.057c0 .689.177 1.206.471 1.607.353.345.766.517 1.237.517.53 0 .943-.172 1.237-.517.353-.344.471-.918.471-1.607s-.177-1.206-.471-1.608c-.295-.345-.766-.517-1.237-.517-.53 0-.942.172-1.296.517-.236.344-.412.919-.412 1.608zM7.423 56.838v-6.201h2.062c.766 0 1.296.057 1.532.115.354.115.648.287.884.631.236.287.354.689.354 1.206 0 .402-.059.689-.236.976-.177.287-.295.459-.53.631-.236.172-.412.23-.648.287-.295.058-.766.115-1.296.115h-.825v2.239h-1.296zm1.296-3.387h.707c.53 0 .825-.057 1.002-.115.177-.057.295-.172.412-.287.118-.115.118-.287.118-.459 0-.23-.059-.402-.177-.574-.118-.172-.295-.23-.53-.287-.177 0-.471-.057-.943-.057h-.589v1.78zM13.079 53.795c0-.632.118-1.148.295-1.608.118-.287.353-.574.589-.861.236-.23.53-.459.825-.574.412-.172.825-.23 1.355-.23.943 0 1.649.287 2.239.861.53.574.825 1.321.825 2.354 0 .976-.294 1.78-.825 2.354-.53.574-1.296.861-2.239.861-.943 0-1.708-.287-2.239-.861-.53-.574-.825-1.321-.825-2.297zm1.296-.057c0 .689.177 1.206.471 1.608.354.344.766.517 1.237.517.53 0 .943-.172 1.237-.517.354-.344.471-.919.471-1.608 0-.689-.177-1.206-.471-1.608-.294-.344-.766-.517-1.237-.517-.53 0-.943.172-1.296.517-.236.344-.412.919-.412 1.608zM24.39 54.542l1.237.402c-.177.689-.53 1.148-.943 1.493-.471.344-1.002.517-1.709.517-.825 0-1.532-.287-2.062-.861-.53-.574-.825-1.321-.825-2.297 0-1.033.295-1.837.825-2.411.53-.574 1.237-.861 2.121-.861.766 0 1.414.23 1.885.689.295.287.53.632.648 1.148l-1.237.287c-.059-.344-.236-.574-.471-.746-.236-.172-.53-.287-.884-.287-.471 0-.825.172-1.119.517-.295.344-.412.861-.412 1.608 0 .804.118 1.321.412 1.665.295.344.648.517 1.119.517.354 0 .648-.115.884-.287.236-.287.412-.631.53-1.091zM30.87 54.542l1.237.402c-.177.689-.53 1.148-.943 1.493-.471.344-1.002.517-1.709.517-.825 0-1.532-.287-2.062-.861-.53-.574-.825-1.321-.825-2.297 0-1.033.294-1.837.825-2.411.53-.574 1.237-.861 2.121-.861.766 0 1.414.23 1.885.689.295.287.53.632.648 1.148l-1.237.287c-.059-.344-.236-.574-.471-.746-.236-.172-.53-.287-.884-.287-.471 0-.825.172-1.119.517-.295.344-.412.861-.412 1.608 0 .804.118 1.321.412 1.665.294.344.648.517 1.119.517.354 0 .648-.115.884-.287.294-.287.471-.631.53-1.091zM33.403 50.638h1.178v4.076l2.592-4.076h1.296v6.201h-1.178v-4.019l-2.533 4.019h-1.296v-6.201h-.059zM39.884 50.638h1.178v4.076l2.592-4.076h1.296v6.201h-1.178v-4.019l-2.533 4.019h-1.296l-.059-6.201zm3.24-1.493h.589c-.059.402-.177.689-.412.919-.236.23-.53.344-.943.344-.412 0-.707-.115-.943-.344-.236-.23-.353-.517-.412-.919h.589c0 .172.118.345.236.459.118.115.295.172.53.172.236 0 .412-.058.53-.172.177-.115.236-.287.236-.459zM50.37 54.542l1.237.402c-.177.689-.53 1.148-.943 1.493-.471.344-1.002.517-1.709.517-.825 0-1.532-.287-2.062-.861-.53-.574-.825-1.321-.825-2.297 0-1.033.295-1.837.825-2.411.53-.574 1.237-.861 2.121-.861.766 0 1.414.23 1.885.689.295.287.53.632.648 1.148l-1.237.287c-.059-.344-.236-.574-.471-.746-.236-.172-.53-.287-.884-.287-.471 0-.825.172-1.119.517-.295.344-.412.861-.412 1.608 0 .804.118 1.321.412 1.665.294.344.648.517 1.119.517.353 0 .648-.115.884-.287.236-.287.412-.631.53-1.091zM52.844 50.638h1.296v2.641c.295 0 .471-.115.589-.23s.236-.459.471-.976c.236-.689.53-1.091.825-1.263.236-.172.707-.23 1.296-.23h.177v.919h-.177c-.236 0-.471.057-.589.115-.118.057-.236.172-.294.287l-.353.804c-.059.23-.177.402-.236.517-.118.115-.236.287-.471.402.295.057.53.23.707.459.177.23.412.574.589 1.033l.884 1.665h-1.532l-.766-1.608-.059-.115-.177-.287c-.177-.287-.295-.517-.412-.574-.118-.057-.295-.115-.471-.115v2.756h-1.296v-6.201zM58.088 53.795c0-.632.118-1.148.295-1.608.118-.287.354-.574.589-.861.236-.23.53-.459.825-.574.412-.172.825-.23 1.355-.23.943 0 1.65.287 2.239.861.53.574.825 1.321.825 2.354 0 .976-.295 1.78-.825 2.354-.53.574-1.296.861-2.239.861-.943 0-1.709-.287-2.239-.861-.53-.574-.825-1.321-.825-2.297zm1.355-.057c0 .689.177 1.206.471 1.608.354.344.766.517 1.237.517.53 0 .943-.172 1.237-.517.354-.344.471-.919.471-1.608 0-.689-.177-1.206-.471-1.608-.294-.344-.766-.517-1.237-.517-.53 0-.943.172-1.296.517-.236.344-.412.919-.412 1.608zM65.393 50.638h1.178v4.076l2.592-4.076h1.296v6.201h-1.178v-4.019l-2.533 4.019h-1.296l-.059-6.201zm3.299-1.493h.589c-.059.402-.177.689-.412.919-.236.23-.53.344-.943.344-.412 0-.707-.115-.943-.344-.236-.23-.353-.517-.412-.919h.589c0 .172.118.345.236.459.118.115.294.172.53.172.236 0 .412-.058.53-.172.118-.115.177-.287.236-.459zM14.669 64.991v.746h-1.237v-.746c-1.002-.057-1.708-.287-2.121-.746-.412-.459-.648-1.033-.648-1.665 0-.689.236-1.263.648-1.722.412-.459 1.119-.689 2.121-.689v-.632h1.237v.632c1.002.057 1.708.287 2.121.746.412.459.648 1.033.648 1.722 0 .689-.236 1.263-.648 1.665-.412.402-1.119.689-2.121.689zm-1.237-1.033v-2.756c-.53 0-.943.115-1.178.344-.236.23-.354.574-.354 1.034 0 .919.471 1.378 1.532 1.378zm1.237 0c.354 0 .648-.057.884-.172.236-.115.412-.23.53-.459.118-.172.177-.459.177-.804 0-.919-.53-1.321-1.532-1.321l-.059 2.756zM18.557 65.737v-6.143h4.713v1.033h-3.417v1.378h3.181v1.034h-3.181v1.665h3.535v1.033h-4.831zM25.097 59.536h4.36v5.11h.53v2.354h-1.06v-1.32h-4.006v1.32h-1.06v-2.354h.53c.236-.517.412-1.148.53-1.837.059-.689.118-1.55.118-2.641l.059-.632zm1.237 1.033c0 1.895-.177 3.215-.53 4.076h2.415v-4.076h-1.885zM31.047 65.737v-6.143h4.713v1.033h-3.417v1.378h3.181v1.034h-3.181v1.665h3.535v1.033h-4.831zM37.056 59.594h2.062c.766 0 1.296.057 1.532.115.353.115.648.287.884.632.236.287.353.689.353 1.206 0 .402-.059.689-.236.976-.177.287-.295.459-.53.631-.236.172-.412.23-.648.287-.295.058-.766.115-1.296.115h-.825v2.354h-1.296v-6.315zm1.296 1.033v1.722h.707c.53 0 .825-.057 1.002-.115.177-.057.295-.172.412-.287.118-.115.118-.287.118-.459 0-.23-.059-.402-.177-.574-.118-.172-.295-.23-.53-.287-.177 0-.471-.057-.943-.057l-.589.057zM48.014 65.737h-1.414l-.53-1.378h-2.533l-.53 1.378h-1.355l2.474-6.143h1.355l2.533 6.143zm-2.356-2.469l-.884-2.297-.884 2.297h1.767zM48.838 59.536h1.296v5.11h2.474v-5.11h1.296v5.11h.53v2.354h-1.06v-1.32h-4.477l-.059-6.143zM55.437 59.536h1.178v4.076l2.592-4.076h1.296v6.143h-1.178v-4.019l-2.533 4.019h-1.355v-6.143zM61.917 59.536h1.178v4.076l2.592-4.076h1.296v6.143h-1.178v-4.019l-2.533 4.019h-1.355v-6.143z"
+                  fill="#046552"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="footer__right">
+            <nav class="footer__menu">
+              <div class="footer__column">
+                <a class="footer__menu-item" href="#">О салоне</a>
+                <a class="footer__menu-item" href="#">Платформа</a>
+                <a class="footer__menu-item" href="#">Библиотека</a>
+              </div>
+              <div class="footer__column">
+                <a class="footer__menu-item" href="#">Новости</a>
+                <a class="footer__menu-item" href="#">Партнеры</a>
+                <a class="footer__menu-item" href="#">Пресса</a>
+              </div>
+            </nav>
+            <div class="footer__socials">
+              <a class="footer__social" href="#">
+                <svg width="11" height="22" viewBox="0 0 11 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path
+                    d="M7.14 22v-10.035h3.243l.486-3.911h-3.729v-2.497c0-1.132.303-1.904 1.866-1.904l1.994-.001v-3.498c-.345-.048-1.529-.154-2.905-.154-2.875 0-4.843 1.823-4.843 5.17v2.884h-3.251v3.911h3.251v10.035h3.888z"
+                    fill="#046552"
+                  />
+                </svg>
+              </a>
+              <a class="footer__social" href="#">
+                <svg width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path
+                    d="M3.334 0h-2.333c-.667 0-.8.314-.8.66 0 .618.791 3.683 3.683 7.737 1.928 2.769 4.645 4.269 7.117 4.269 1.483 0 1.667-.333 1.667-.908v-2.093c0-.667.14-.8.61-.8.346 0 .939.173 2.324 1.508 1.582 1.582 1.843 2.292 2.733 2.292h2.333c.667 0 1-.333.808-.991-.21-.656-.966-1.607-1.968-2.734-.544-.643-1.36-1.335-1.607-1.681-.346-.445-.247-.643 0-1.038l.041-.059c.352-.5 2.823-4.043 3.098-5.305.148-.494 0-.858-.706-.858h-2.333c-.593 0-.867.314-1.015.66 0 0-1.187 2.892-2.868 4.771-.544.544-.791.717-1.088.717-.148 0-.363-.173-.363-.667v-4.623c0-.593-.172-.858-.667-.858h-3.667c-.371 0-.594.275-.594.536 0 .562.84.692.927 2.274v3.436c0 .753-.136.89-.433.89-.791 0-2.715-2.905-3.856-6.229-.224-.646-.448-.907-1.044-.907z"
+                    fill="#046552"
+                  />
+                </svg>
+              </a>
+              <a class="footer__social" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9 1.653c2.392 0 2.678.012 3.623.052.872.041 1.347.186 1.662.31.39.144.743.373 1.033.67.297.289.525.641.668 1.03.123.315.269.79.31 1.662.04.945.052 1.232.052 3.623s-.012 2.678-.055 3.623c-.047.872-.193 1.347-.315 1.662-.17.421-.359.715-.671 1.033-.291.296-.644.524-1.033.668-.311.123-.793.269-1.668.31-.95.04-1.231.052-3.629.052-2.398 0-2.678-.012-3.629-.055-.872-.047-1.353-.193-1.668-.315-.426-.17-.717-.359-1.03-.671-.315-.315-.516-.616-.67-1.033-.125-.311-.269-.793-.315-1.668l-.005-.16c-.028-.821-.042-1.211-.042-3.458 0-2.241.013-2.635.041-3.462l.006-.166c.046-.875.19-1.356.315-1.668.155-.426.356-.717.67-1.033.312-.312.604-.514 1.03-.672.315-.123.785-.268 1.66-.312l.071-.003c.895-.032 1.22-.044 3.554-.044l.037.026zm-1.761 3.098c.558-.231 1.156-.35 1.761-.35.604 0 1.202.119 1.761.35.558.231 1.065.57 1.492.997.427.427.766.934.997 1.493.231.558.35 1.156.35 1.761 0 .604-.119 1.202-.35 1.761-.231.558-.57 1.065-.997 1.493-.427.427-.934.766-1.492.997-.558.231-1.156.35-1.761.35-.604 0-1.202-.119-1.761-.35-.558-.231-1.065-.57-1.493-.997-.427-.427-.766-.934-.997-1.493-.231-.558-.35-1.156-.35-1.761 0-.604.119-1.202.35-1.761.231-.558.57-1.065.997-1.493.427-.427.934-.766 1.493-.997zm7.305.227c.202-.202.316-.475.316-.761 0-.592-.485-1.074-1.077-1.074-.141 0-.281.028-.411.082-.13.054-.249.133-.349.233-.1.1-.179.218-.233.349-.054.13-.082.27-.082.411 0 .141.028.281.082.411.054.13.133.249.233.349.1.1.218.179.349.233.13.054.27.082.411.082.285 0 .559-.113.761-.315zM9 .04c-2.436 0-2.739.012-3.693.052-.957.047-1.605.195-2.176.417-.598.226-1.139.579-1.587 1.036-.458.446-.811.988-1.036 1.587-.222.571-.37 1.219-.417 2.176-.043.954-.052 1.257-.052 3.693s.012 2.739.052 3.693c.047.954.195 1.605.417 2.176.226.598.579 1.139 1.036 1.587.446.458.988.811 1.587 1.036.571.219 1.222.37 2.176.417.954.043 1.257.052 3.693.052s2.739-.012 3.693-.052c.954-.047 1.605-.199 2.176-.417.598-.226 1.139-.579 1.587-1.036.458-.446.812-.988 1.036-1.587.219-.571.37-1.222.417-2.176.043-.954.052-1.257.052-3.693s-.012-2.739-.052-3.693c-.047-.954-.199-1.608-.417-2.176-.226-.598-.579-1.139-1.036-1.587-.446-.458-.988-.812-1.587-1.036-.571-.222-1.222-.37-2.176-.417-.954-.043-1.257-.052-3.693-.052zm0 1.613c2.392 0 2.678.012 3.623.052.872.041 1.347.186 1.662.31.39.144.743.373 1.033.67.297.289.525.641.668 1.03.123.315.269.79.31 1.662.04.945.052 1.232.052 3.623s-.012 2.678-.055 3.623c-.047.872-.193 1.347-.315 1.662-.17.421-.359.715-.671 1.033-.291.296-.644.524-1.033.668-.311.123-.793.269-1.668.31-.95.04-1.231.052-3.629.052-2.398 0-2.678-.012-3.629-.055-.872-.047-1.353-.193-1.668-.315-.426-.17-.717-.359-1.03-.671-.315-.315-.516-.616-.67-1.033-.125-.311-.269-.793-.315-1.668l-.005-.16c-.028-.821-.042-1.211-.042-3.458 0-2.241.013-2.635.041-3.462l.006-.166c.046-.875.19-1.356.315-1.668.155-.426.356-.717.67-1.033.312-.312.604-.514 1.03-.672.315-.123.785-.268 1.66-.312l.071-.003c.895-.032 1.22-.044 3.554-.044l.037.026z"
+                    fill="#046552"
+                  />
+                  <path
+                    d="M9 11.988c-1.651 0-2.987-1.336-2.987-2.987s1.336-2.987 2.987-2.987 2.987 1.336 2.987 2.987-1.336 2.987-2.987 2.987z"
+                    fill="#046552"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__info">
+            <div class="footer__phone">
+              <div class="footer__text">Телефон горячей линии</div>
+              <a class="footer__number" href="tel:+79653852821">+7 (965) 385-28-21</a>
+            </div>
+            <div class="footer__mail">info@mmco-expo.ru</div>
+          </div>
+          <div class="footer__cop">Designed with love by ❤ ️MateÇa</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

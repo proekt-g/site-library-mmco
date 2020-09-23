@@ -5,6 +5,8 @@ function resizeWindow() {
 }
 
 $(window).on("load", () => {
+    let textHeight
+
     function ajaxRequest(ajaxForm, url) {
         try {
             history.replaceState(null, null, "#")
@@ -28,6 +30,9 @@ $(window).on("load", () => {
         })
     }
     function clickAvatar() {
+        $(".box__all-avatar--active")
+            .not($(this).parent().children(".box__all-avatar"))
+            .toggleClass("box__all-avatar--active")
         $(this)
             .parent()
             .children(".box__all-avatar")
@@ -44,25 +49,6 @@ $(window).on("load", () => {
         if ($(".filters__block-check--active").length === 0)
             $(".filters__tags").removeClass("filters__tags--active")
         else $(".filters__tags").addClass("filters__tags--active")
-        // let notCheck = false
-        // $(".filters__block-item .filter-input").each(function () {
-        //     console.log($(this).prop("checked"))
-        //     if ($(this).prop("checked")) {
-        //         console.log(this)
-        //         $(".filters__tags").addClass("filters__tags--active")
-        //         notCheck = true
-        //         console.log("check")
-        //         // $(".filters__tags").slideToggle(400, function () {
-        //         //     // $(this).css("display", "flex")
-        //         // })
-        //     }
-        // })
-        // console.log(notCheck)
-
-        // if (!notCheck) {
-        //     console.log("not check")
-        //     $(".filters__tags").removeClass("filters__tags--active")
-        // }
     }
     function deleteTag() {
         $(this).parent(".filters__tag").remove()
@@ -86,6 +72,10 @@ $(window).on("load", () => {
                     .toggleClass("filters__block-check--active")
             }
         })
+        // Отправка формы при удалении тега страница "Библиотеки"
+        ajaxRequest("filters__form", "test.php")
+        // /Отправка формы при удалении тега страница "Библиотеки"
+        checkTagsBlock()
     }
     function clickFilterBlockElement() {
         let _this = this
@@ -134,18 +124,78 @@ $(window).on("load", () => {
             .toggleClass("filters__block-check--active")
         checkTagsBlock()
     }
+    function clickMoreFilters() {
+        if ($(window).width() <= 500) $("body").toggleClass("body-block")
+        $(".filters__more").toggleClass("filters__more--open")
+        $(".filters__block").toggleClass("filters__block--active")
+    }
+
+    // Формы
+    // **************************
+    // Страница Календарь событий
 
     $(".filter__form").on("input", function () {
         event.preventDefault()
         ajaxRequest("filter__form", "test.php")
     })
+
     $(".filter__form").on("submit", function () {
         event.preventDefault()
         ajaxRequest("filter__form", "test.php")
     })
+
+    $(".filter__form").on("input", () => {
+        if ($(event.target).hasClass("filter__input--all")) {
+            $(event.target)
+                .parent()
+                .children(".filter__input")
+                .not(event.target)
+                .prop("checked", false)
+            $(event.target).prop("checked", true)
+        } else $(".filter__input--all").prop("checked", false)
+    })
+
+    // /Страница Календарь событий
+
+    // Страница Спикеры
+
+    $(".navigation__form").on("input", (event) => {
+        event.preventDefault()
+        ajaxRequest("navigation__form", "test.php")
+    })
+    $(".navigation__form").on("submit", (event) => {
+        event.preventDefault()
+        ajaxRequest("navigation__form", "test.php")
+    })
+
+    // /Страница Спикеры
+
+    // Каталог Библиотеки
+
+    $(".filters__form").on("submit", (event) => {
+        event.preventDefault()
+        ajaxRequest("filters__form", "test.php")
+    })
+
+    $(".filters__form").on("input", (event) => {
+        if (!$(event.target).parent(".filters__block-item").length) {
+            event.preventDefault()
+            ajaxRequest("filters__form", "test.php")
+        }
+    })
+
+    // /Каталог Библиотеки
+    // **************************
+    // /Формы
+
+    $(".information__btn--share").on("click", () => {
+        $(".information__share").toggleClass("information__share--active")
+    })
+
     $(".menu__burger").on("click", function () {
+        $("body").toggleClass("body-block")
         $(this).toggleClass("menu__burger--open")
-        $(".menu").toggleClass("menu__burger--open")
+        $(".menu").toggleClass("menu--open")
     })
     $(".filter__top-tag").on("click", function () {
         if ($(this).hasClass("filter__top-tag--all")) {
@@ -158,17 +208,14 @@ $(window).on("load", () => {
             $(".filter__top-tag--all").removeClass("filter__top-tag--check")
         }
     })
-    $(".filter__form").on("input", () => {
-        if ($(event.target).hasClass("filter__input--all")) {
-            $(event.target)
-                .parent()
-                .children(".filter__input")
-                .not(event.target)
-                .prop("checked", false)
-            $(event.target).prop("checked", true)
-        } else $(".filter__input--all").prop("checked", false)
+
+    $(".box__button--share").on("focus", (event) => {
+        $(event.target)
+            .parent()
+            .children(".box__share")
+            .toggleClass("box__share--active")
     })
-    $(".box__button--share").on("click", (event) => {
+    $(".box__button--share").on("blur", (event) => {
         $(event.target)
             .parent()
             .children(".box__share")
@@ -207,22 +254,40 @@ $(window).on("load", () => {
         $(".toggle__switch").toggleClass("toggle__switch--right")
     })
 
-    $(".filters__switch-text").on("click", (event) => {
+    $(".filter-switch__text").on("click", (event) => {
         clickDropList(
             event.target,
-            "filters__switch--active",
-            ".filters__modal"
+            "filter-switch--active",
+            ".filter-switch__modal"
         )
     })
-    $(".filters__modal-label").on("click", (event) => {
-        $(".filters__switch-text").text($(event.target).text())
-        $(".filters__modal").toggle(0)
-        $(".filters__search").height($(".filters__switch").outerHeight())
+    $(".filter-switch__modal-label").on("click", (event) => {
+        $(".filter-switch__text").text($(event.target).text())
+        $(".filter-switch__modal").toggle(0)
+        $(".filter-switch").toggleClass("filter-switch--active")
+        if ($(window).width() >= 1200)
+            $(".filter-search").height($(".filter-switch").outerHeight())
+    })
+    $(".navigation__switch-text").on("click", () => {
+        if ($(window).width() <= 500) $("body").toggleClass("body-block")
+    })
+    $(".navigation__switch-label").on("click", () => {
+        if ($(window).width() <= 500) $("body").toggleClass("body-block")
     })
 
+    $(".navigation__close").on("click", (event) => {
+        $("body").toggleClass("body-block")
+        $(".navigation__switch").toggleClass("navigation__switch--open")
+        $(".navigation__modal").slideToggle(400)
+    })
+    $(".filters__block-close").on("click", (event) => {
+        clickMoreFilters()
+    })
+    $(".filters__block-btn").on("click", () => {
+        clickMoreFilters()
+    })
     $(".filters__more").on("click", (event) => {
-        $(event.target).toggleClass("filters__more--open")
-        $(".filters__block").toggleClass("filters__block--active")
+        clickMoreFilters()
     })
 
     $(".filters__block-check").on("click", clickFilterBlockElement)
@@ -236,16 +301,40 @@ $(window).on("load", () => {
         checkTagsBlock()
     })
 
+    $(".bio__more").on("click", (event) => {
+        let buffText = $(event.target).text()
+        $(event.target).text($(event.target).data("close-text"))
+        $(event.target).data("close-text", buffText)
+
+        if (
+            $(".bio__text").height() === $(".bio__text-p").get(0).scrollHeight
+        ) {
+            $(".bio__text-p").animate({ height: textHeight }, 1000, () => {
+                $(".bio__text").toggleClass("bio__text--open")
+            })
+        } else {
+            $(".bio__text").toggleClass("bio__text--open")
+            textHeight = $(".bio__text").height()
+            $(".bio__text-p").animate(
+                { height: $(".bio__text-p").get(0).scrollHeight },
+                1000
+            )
+        }
+    })
+
     $(".box__avatars-inner").on("click", clickAvatar)
 
     $(window).on("resize", resizeWindow)
     checkTagsBlock()
     $(function () {
-        $(".content__tape").overlayScrollbars({})
-        $(".box__all-avatar-scroll").overlayScrollbars({})
+        if ($(window).width() >= 950) {
+            $(".content__tape").overlayScrollbars({})
+            $(".box__all-avatar-scroll").overlayScrollbars({})
+            $(".navigation__modal").overlayScrollbars({})
+        }
     })
     $('a[href^="#"]').on("click", function (event) {
-        event.preventDefault()
+        // event.preventDefault()
         if (String(this).slice(-1) !== "#") {
             let sc = $(this).attr("href"),
                 dn = $(sc).offset().top

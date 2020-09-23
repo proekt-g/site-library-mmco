@@ -11,26 +11,32 @@
         align-items: center;
     }
     &__logo {
+        background-color: var(--site-color);
         flex: 0 0 60px;
         height: 40px;
-        @media (max0width: 950px) {
+        @media (max-width: 950px) {
             height: 30px;
             flex: 0 0 46px;
+            z-index: 101;
+            position: relative;
         }
         &-img {
             height: 40px;
-            @media (max0width: 950px) {
+            @media (max-width: 950px) {
                 height: 30px;
             }
         }
     }
     &__icon {
+        background-color: var(--site-color);
         flex: 0 1 auto;
         flex-grow: 1;
         height: 52px;
         margin-left: 24px;
         @media (max-width: 950px) {
             height: 40px;
+            z-index: 101;
+            position: relative;
         }
         &-img {
             width: 59px;

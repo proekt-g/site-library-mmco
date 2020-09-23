@@ -4,23 +4,7 @@
         @media (max-width: 950px) {
             padding-top: 54px;
         }
-        &__back {
-            padding-left: 24px;
-            position: relative;
-            font-size: 16px;
-            cursor: pointer;
-            &:hover {
-                &::after {
-                    animation: swing 0.6s ease;
-                    animation-iteration-count: 1;
-                }
-            }
-            &::after {
-                content: url(../images/arrow-left.svg);
-                position: absolute;
-                left: 0;
-            }
-        }
+
         &__subtitle {
             color: #036452;
             font-size: 16px;
@@ -52,6 +36,7 @@
             margin-top: 25px;
             max-width: 840px;
             flex-wrap: wrap;
+            position: relative;
             @media (max-width: 1200px) {
                 max-width: 100%;
             }
@@ -66,6 +51,42 @@
             @media (max-width: 500px) {
                 margin-left: 24px;
                 margin-top: 20px;
+            }
+        }
+        &__share {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            z-index: 3;
+            padding: 8px 0;
+            border-radius: 8px;
+            background-color: #ffffff;
+            cursor: pointer;
+            filter: drop-shadow(0 8px 28px rgba(0, 0, 0, 0.09));
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.3s;
+            &--active {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            &-item {
+                line-height: 40px;
+                height: 40px;
+                display: block;
+                padding: 0 30px 0 0;
+                transition: 0.3s;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    background-color: var(--bg-color);
+                }
+                &-img {
+                    height: 28px;
+                    flex: 0 0 24px;
+                    margin: 0 8px 0 16px;
+                }
             }
         }
         &__time {
