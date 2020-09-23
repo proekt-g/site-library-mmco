@@ -334,7 +334,6 @@ $(window).on("load", () => {
         }
     })
     $('a[href^="#"]').on("click", function (event) {
-        // event.preventDefault()
         if (String(this).slice(-1) !== "#") {
             let sc = $(this).attr("href"),
                 dn = $(sc).offset().top
